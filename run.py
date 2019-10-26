@@ -1,2 +1,40 @@
-a = "test"
-print(a)
+import random
+import time
+
+initializing = input("Please type !roll to start the round")
+if initializing == "!roll":
+  rolls = []
+  print("Rolling 1st of 3 dices in....\n3")
+  time.sleep(1)
+  print("2")
+  time.sleep(1)
+  print("1")
+  time.sleep(1)
+  roll1 = random.randrange(6)
+  print("Your First Roll was {}!".format(roll1))
+  time.sleep(3)
+  rolls.append(roll1)
+  print("Rolling 2nd of 3 dices in....\n3")
+  time.sleep(1)
+  print("2")
+  time.sleep(1)
+  print("1")
+  time.sleep(1)
+  roll2 = random.randrange(6)
+  rolls.append(roll2)
+  print("Your 2nd Roll was {}!".format(roll2))
+  time.sleep(3)
+  print("Rolling last of 3 dices in....\n3")
+  time.sleep(1)
+  print("2")
+  time.sleep(1)
+  print("1")
+  time.sleep(1)
+  roll3 = random.randrange(6)
+  rolls.append(roll3)
+  print("Your Last Roll was {}!".format(roll3))
+  time.sleep(1)
+  print("Total score was {}!".format(sum(rolls)))
+else:
+  print("I don't understand that input. Try !roll")
+
