@@ -35,6 +35,5 @@ if initializing == "!roll":
   print("Your Last Roll was {}!".format(roll3))
   time.sleep(1)
   print("Total score was {}!".format(sum(rolls)))
-else:
-  print("I don't understand that input. Try !roll")
-
+ekse:
+  print("I don't understand that request")
